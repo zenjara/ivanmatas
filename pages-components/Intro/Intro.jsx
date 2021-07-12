@@ -1,17 +1,26 @@
 import {FlexLayout} from "../../ui";
-import {Box, Link} from "theme-ui";
+import {Box, Link, Text} from "theme-ui";
 import Profile from "../../ui/assets/images/profile.svg";
 import LinkedinIcon from "../../ui/assets/images/linkedin.svg";
 import InstagramIcon from "../../ui/assets/images/instagram.svg";
 import GithubIcon from "../../ui/assets/images/github.svg";
 import YoutubeIcon from "../../ui/assets/images/youtube.svg";
 import IntroText from "./IntroText";
+import {useEffect} from "react";
+import animateText from "../../utils/textAnimation";
+
 
 const Intro = () => {
+    useEffect(() => animateText());
+
     return (
-        <FlexLayout sx={{width: '100%'}} justifyContent='flex-end' alignItems='center' pr={[0, '60px']} pl={[0, 136]}>
+        <FlexLayout sx={{width: '100%'}} justifyContent='flex-end' alignItems={['flex-start', 'center']}
+                    pr={[0, '60px']} pl={[0, 136]}>
             <FlexLayout display={['none', 'flex']} flexGrow={1}>
                 <IntroText/>
+            </FlexLayout>
+            <FlexLayout display={['flex', 'none']}>
+                <Text as='h2' variant='introTitle' className="txt-rotate" data-period="2000" data-rotate='[ "Hi! :)" ]'/>
             </FlexLayout>
             <FlexLayout mr={['7%', '18%']} sx={{
                 maxHeight: ['248px', '618px'],

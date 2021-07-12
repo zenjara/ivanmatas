@@ -4,6 +4,7 @@ import Link from 'next/link'
 import MenuIcon from "../../ui/assets/images/menu.svg";
 import {useState} from "react";
 import SocialIcons from "../Shared";
+import CloseIcon from "../../ui/assets/images/close.svg";
 
 const Header = ({mb = ['24px', '24px', '68px']}) => {
     const [open, setOpen] = useState(false);
@@ -17,7 +18,6 @@ const Header = ({mb = ['24px', '24px', '68px']}) => {
         top: 0,
         backgroundColor: 'rgba(17, 17, 17, 1)',
         overflowX: 'hidden',
-        transition: '0.5s',
     }
 
     const overlayContentStyles = {
@@ -26,7 +26,6 @@ const Header = ({mb = ['24px', '24px', '68px']}) => {
         top: '5%',
         width: '100%',
         overflowX: 'hidden',
-        transition: '0.5s',
     }
 
     const displayMobileMenu = () => {
@@ -34,7 +33,7 @@ const Header = ({mb = ['24px', '24px', '68px']}) => {
             <FlexLayout flexDirection='column' display={['flex', 'none']} pl={24} space={40}
                         sx={overlayContentStyles}>
                 <FlexLayout justifyContent='flex-end'>
-                    <MenuIcon onClick={() => setOpen(false)} sx={{textAlign: 'right'}}/>
+                    <CloseIcon onClick={() => setOpen(false)} sx={{textAlign: 'right'}}/>
                 </FlexLayout>
                 <Link href="/"><Text variant='headerLinksMobileMenu'>Home</Text></Link>
                 <Link href="/about"><Text variant='headerLinksMobileMenu'>About</Text></Link>

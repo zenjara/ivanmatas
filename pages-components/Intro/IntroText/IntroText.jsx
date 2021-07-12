@@ -4,7 +4,7 @@ import PointerIcon from "../../../ui/assets/images/pointer.svg";
 
 const IntroText = () => {
     return (
-        <FlexLayout flexDirection='column' space={3} flexGrow={1} px={24}>
+        <FlexLayout flexDirection='column' space={[2,3]} flexGrow={1} px={24}>
             <FlexLayout flexDirection='column' space={3} display={['none', 'flex']}>
                 <Text as='h2' variant='introTitle'>I'm Ivan</Text>
                 <Text as='h2' variant='introTitle'>Matas</Text>
@@ -22,7 +22,7 @@ const IntroText = () => {
                 <Box sx={{width: '30px'}} pt={10}><PointerIcon/></Box>
             </FlexLayout>
 
-            <Text variant='intro'>Croatian
+            <Text variant='intro' sx={{fontWeight: [300, 400]}}>Croatian
                 platform created to simplify charity donations to organizations in need</Text>
         </FlexLayout>
     );

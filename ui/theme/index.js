@@ -48,10 +48,10 @@ export default {
         introTitle: {
             color: '#474343',
             fontFamily: 'Source Sans Pro',
-            fontSize: '112px',
+            fontSize: ['28px','112px'],
             lineHeight: '100px',
             letterSpacing: '0.02em',
-            textTransform: 'uppercase'
+            textTransform: ['none','uppercase']
         },
         intro: {
             color: ['descriptionMobile', 'description'],
@@ -118,14 +118,14 @@ export default {
         skillsTitle: {
             color: 'header',
             fontWeight: 800,
-            fontSize: ['16px', '32px'],
+            fontSize: ['18px', '32px'],
             lineHeight: '38px',
             letterSpacing: '0.04em'
         },
         skillsSubtitle: {
             color: 'skill',
-            fontWeight: 600,
-            fontSize: ['12px', '20px'],
+            fontWeight: 400,
+            fontSize: ['16px', '20px'],
             textTransform: 'uppercase'
         }
     },
@@ -146,10 +146,10 @@ export default {
             justifyContent: 'center',
             alignItems: 'center',
             padding: '8px 24px',
-            border: '1px solid',
+            border: '1px solid #2F4858',
             cursor: 'pointer',
-            minWidth: '130px',
-            minHeight: '36px',
+            width: '130px',
+            height: '36px',
             fontWeight: 600,
             fontSize: '16px',
             lineHeight: '19px'

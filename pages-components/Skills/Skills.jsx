@@ -7,7 +7,7 @@ const Skills = () => {
             <FlexLayout justifyContent='center' px={['8px', 32]} py={['6px', 16]}
                         sx={{background: '#2F4858', borderRadius: '50px'}}
                         mb={['12px', 36]}>
-                <Text sx={{color: 'white', fontSize: ['12px', '16px']}}>{name}</Text>
+                <Text sx={{color: 'white', fontSize: ['14px', '16px']}}>{name}</Text>
             </FlexLayout>
         )
     }
@@ -16,7 +16,7 @@ const Skills = () => {
         return (
             <FlexLayout space={['4px', 16]} alignItems='center'>
                 <Box sx={{width: '8px', height: '8px', borderRadius: '50%', background: '#F6635A'}}/>
-                <Text sx={{fontSize: ['12px', '16px']}}>{name}</Text>
+                <Text sx={{fontSize: ['14px', '16px']}}>{name}</Text>
             </FlexLayout>
         )
     }

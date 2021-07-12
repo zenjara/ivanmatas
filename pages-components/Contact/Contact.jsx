@@ -12,7 +12,7 @@ const Contact = () => {
             <FlexLayout flexDirection='column'>
                 <Box mb={[32, 44]} sx={{borderLeft: `3px solid #F6635A`}} pl={[12, 44]}>
                     <Text as='p' mb={[16, 28]} sx={{
-                        fontSize: ['16px', '24px'],
+                        fontSize: ['20px', '24px'],
                         lineHeight: '29px',
                         textDecoration: 'underline'
                     }}>ivan.matas2@gmail.com</Text>
