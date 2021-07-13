@@ -50,9 +50,11 @@ const ContentItem = ({
                 <Text as='h4' mb={isPodcast ? [16, 32] : [16, 40]} variant='contentItemTitle'>{title}</Text>
                 <Text as='p' mb={[24, 56]} variant='contentDescription'>{description}</Text>
                 <Link href={url} sx={{alignSelf: 'center'}} target="_blank">
-                    <Button>
-                        {isPodcast && <FlexLayout mr={10}><PlayIcon/></FlexLayout>}
-                        {btnText}
+                    <Button sx={{fontFamily: 'Lato'}}>
+                        <FlexLayout alignItems='center' justifyContent='center'>
+                            {isPodcast && <Box mr={10}><PlayIcon /></Box>}
+                            {btnText}
+                        </FlexLayout>
                     </Button>
                 </Link>
             </FlexLayout>
