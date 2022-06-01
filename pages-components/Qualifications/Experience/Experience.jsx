@@ -22,7 +22,8 @@ const Experience = () => {
             </FlexLayout>
             <Text mb={32} sx={{fontSize: ['14px', '16px']}}>WORK HISTORY</Text>
             <FlexLayout flexDirection='column' space={32} mb={56}>
-                {experienceItem('Full Stack Developer', 'Ars Futura', 'September 2018', 'Present')}
+                {experienceItem('Self Employed', 'MTSProgramming', 'August 2021', 'Present')}
+                {experienceItem('Full Stack Developer', 'Ars Futura', 'September 2018', 'August 2021')}
                 {experienceItem('Outsource Software Developer', 'Privredna Banka Zagreb d.d.', 'March 2018', 'September 2018')}
                 {experienceItem('Software Developer', 'Locastic', 'December 2016', 'September 2018')}
             </FlexLayout>
